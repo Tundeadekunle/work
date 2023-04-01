@@ -1,0 +1,23 @@
+
+.solutions-logo {
+  position: relative;
+  animation: solutions-logo infinite 3s;
+  animation-direction: alternate;
+}
+
+@keyframes solutions-logo {
+  
+    0%   {left: 10px;}
+  
+  
+    100%  {left: 200px;}
+  
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .solutions-page .logo-zone img {
+    transform: translate(-20rem, 20rem);
+  }
+}

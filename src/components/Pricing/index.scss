@@ -1,0 +1,37 @@
+.pricing-logo {
+  position: relative;
+  animation: pricing-logo infinite 3s;
+  animation-direction: alternate;
+}
+
+@keyframes pricing-logo {
+  
+    0%   {top: 10px;}
+  
+  
+    100%  {top: 200px;}
+  
+
+}
+
+@media screen and (max-width: 1200px) {
+  .pricing-page .logo-zone img {
+    transform: translate(-10rem, 10rem);
+  }
+
+  .pricing-logo {
+    position: relative;
+    animation: pricing-logo infinite 3s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes pricing-logo {
+    
+      0%   {top: 50px;}
+    
+    
+      100%  {top: 200px;}
+    
+  
+  }
+}

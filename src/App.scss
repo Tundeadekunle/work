@@ -1,0 +1,65 @@
+$primary-color: #6cbef9;
+
+
+
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+@import '~loaders.css/src/animations/triangle-skew-spin.scss';
+@import '~loaders.css/src/animations/square-spin.scss';
+@import '~loaders.css/src/animations/ball-rotate.scss';
+
+
+@font-face {
+  font-family: 'LaBelleAurore';
+  src: url('./assets/fonts/LaBelleAurore.woff');
+}
+
+@font-face {
+  font-family: 'CentraNo2-Book';
+  src: url('./assets/fonts/CentraNo2-Book.ttf');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff');
+}
+@font-face {
+  font-family: 'helvetica-neu';
+  src: url('./assets/fonts/helvetica-neu.ttf');
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/ClashDisplay.ttf');
+  font-weight: 600;
+}
+
+.App {
+  background: #000;
+  width: 100%;
+  //display: grid;
+  overflow: hidden;
+  height: 700px;
+  
+  //height: 1000px;
+  //grid-template-columns: 1fr repeat(15, 5rem) 1fr;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1200px) {
+  .loader-active {
+    height: 25%;
+  }
+}

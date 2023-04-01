@@ -1,0 +1,153 @@
+.contact-form {
+  //width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  //margin-left: 50px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    list-style: none;
+
+    .li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      //margin-bottom: 10px;
+      overflow: hidden;
+      display: block; 
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+      //width: 100%;
+    }
+    .li {
+      width: 80%;
+      list-style: none;
+      list-style-type: none;
+    }
+    .list {
+      width: 105%;
+    }
+    //li.half {
+      //width: 100%;
+      //margin-left: 2%;
+      float: left;
+      clear: none;
+      color: #e3f307;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    //}
+    .half {
+      color: #fff;
+    }
+  }
+
+  input[type='text']
+   {
+    //width: 100%;
+    border: 0;
+    background: #adf1fa7a;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    color: #e3f307;
+    box-sizing: border-box;
+  }
+  input[type='email'] {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #adf1fa7a;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    color: #e3f307;
+    box-sizing: border-box;
+    //width: 60%;
+  }
+  textarea{
+    width: 68%;
+  border: 0;
+  background: #adf1fa7a;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  min-height: 150px;
+  }
+  .flat-button {
+    color: #ffd700;
+    background: 0 0;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    float: right;
+    border-radius: 4px;
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .contact-form {
+    //margin-left: -1000px;
+    width: 100%;
+  }
+
+  .contact-form ul li.half {
+    width: 100%;
+    display: initial;
+    margin-left: 6.5rem;
+
+    &:first-child {
+      display: none;
+    }
+  }
+  .contact-form ul:first-child {
+    margin-left: 43px;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form textarea {
+    //width: 180px;
+    margin-left: 116px;
+    //width: 180px;
+  }
+
+  .contact-form ul {
+    width: 70%;
+    margin-left: 4rem;
+  }
+
+  .contact-form {
+    margin-left: -10rem;
+    width: 500px;
+  }
+  .contact-form .flat-button {
+  float: left;
+  margin-left: 7.5rem;
+    //margin-left: -20px;
+  }
+  .contact-form input[type="email"] {
+    //margin-left: 1rem;
+    //transform: translateX(-3rem);
+  }
+  .li {
+    margin-left: 80px;
+    left: 117px;
+  }
+}
